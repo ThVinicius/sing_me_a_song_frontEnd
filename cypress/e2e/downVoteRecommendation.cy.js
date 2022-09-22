@@ -2,8 +2,8 @@ beforeEach(() => {
   cy.resetDatabase()
 })
 
-describe('testa a feature de adição de pontos', () => {
-  it('testa se o voto está sendo computado no backEnd e se está sendo mostrado no frontEnd', () => {
+describe('testa a feature de remoção de pontos', () => {
+  it('testa se a remoção de voto está sendo computado no backEnd e se está sendo mostrado no frontEnd', () => {
     cy.visit('http://localhost:3000')
 
     const recommendation = {
@@ -26,16 +26,16 @@ describe('testa a feature de adição de pontos', () => {
     cy.getRecommendationByName(recommendation.name).then(({ id, score }) => {
       expect(score).to.equal(0)
 
-      cy.intercept('POST', `/recommendations/${id}/upvote`).as('upVote')
+      cy.intercept('POST', `/recommendations/${id}/downvote`).as('downVote')
 
-      cy.get('[data-cy="upVote"]').click()
+      cy.get('[data-cy="downVote"]').click()
 
-      cy.wait('@upVote')
+      cy.wait('@downVote')
 
-      cy.get('[data-cy="score"]').should('have.text', '1')
+      cy.get('[data-cy="score"]').should('have.text', '-1')
 
       cy.getRecommendationByName(recommendation.name).then(({ score }) => {
-        expect(score).to.equal(1)
+        expect(score).to.equal(-1)
       })
     })
   })

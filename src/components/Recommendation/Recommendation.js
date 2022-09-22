@@ -49,7 +49,7 @@ export default function Recommendation({
       <Row data-cy="score">
         <GoArrowUp data-cy="upVote" size="24px" onClick={handleUpvote} />
         {score}
-        <GoArrowDown size="24px" onClick={handleDownvote} />
+        <GoArrowDown data-cy="downVote" size="24px" onClick={handleDownvote} />
       </Row>
     </Container>
   )
