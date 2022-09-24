@@ -16,7 +16,7 @@ Cypress.Commands.add('resetDatabase', () => {
 Cypress.Commands.add('getRecommendationByName', name => {
   cy.request('GET', `http://localhost:5000/tests/recommendations/name`, {
     name
-  }).then(data => cy.wrap(data.body))
+  }).then(data => cy.wrap(data.body.recommendation))
 })
 
 //
