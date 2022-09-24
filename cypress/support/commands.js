@@ -19,6 +19,12 @@ Cypress.Commands.add('getRecommendationByName', name => {
   }).then(data => cy.wrap(data.body.recommendation))
 })
 
+Cypress.Commands.add('createTopTen', () => {
+  cy.request('POST', `http://localhost:5000/tests/recommendations/topten`).then(
+    data => cy.wrap(data.body)
+  )
+})
+
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
