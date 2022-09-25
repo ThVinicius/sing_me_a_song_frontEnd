@@ -44,7 +44,7 @@ export default function Recommendation({
 
   return (
     <Container>
-      <Row>{name}</Row>
+      <Row data-cy={`top${id}`}>{name}</Row>
       <ReactPlayer url={youtubeLink} width="100%" height="100%" />
       <Row data-cy="score">
         <GoArrowUp data-cy="upVote" size="24px" onClick={handleUpvote} />
