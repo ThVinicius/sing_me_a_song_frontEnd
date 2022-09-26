@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# projeto21-sing me a song
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this project I was given the task of doing the unit tests, integration and e2e
 
-## Available Scripts
+<p align="center">
+  <img  src="https://cdn-icons-png.flaticon.com/512/3208/3208679.png">
+</p>
+<h1 align="center">
+  Sing me a song
+</h1>
+<div align="center">
 
-In the project directory, you can run:
+  <h3>Built With</h3>
 
-### `npm start`
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" height="30px"/>
+  <img src="https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white" height="30px"/>
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" height="30px"/>
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" height="30px"/>  
+  <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express.js&logoColor=white" height="30px"/>
+  <img src="https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white" height="30px"/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <!-- Badges source: https://dev.to/envoy_/150-badges-for-github-pnk -->
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br/>
 
-### `npm test`
+# Description
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Sing me a song is an application for anonymous song recommendation. The more people like a recommendation, the more likely it is to be recommended to others.
 
-### `npm run build`
+</br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Testes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- unitary [(backEnd)](https://github.com/ThVinicius/sing_me_a_song_backEnd)
+- integration [(backEnd)](https://github.com/ThVinicius/sing_me_a_song_backEnd)
+- e2e [(frontEnd)](https://github.com/ThVinicius/sing_me_a_song_frontEnd)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+</br>
 
-### `npm run eject`
+## Environment Variables
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run this project, you will need to add the following environment variables to your .env file
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`REACT_APP_API_BASE_URL = API URL`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+</br>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Run Locally
 
-## Learn More
+Clone the project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+  https://github.com/ThVinicius/sing_me_a_song_frontEnd.git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Go to the project directory
 
-### Code Splitting
+```bash
+  cd sing_me_a_song_frontEnd
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Install dependencies
 
-### Analyzing the Bundle Size
+```bash
+  npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Start the server
 
-### Making a Progressive Web App
+```bash
+  npm run start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Run tests
 
-### Advanced Configuration
+```bash
+  npx cypress open
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+</br>
 
-### Deployment
+## Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [Awesome Badges](https://github.com/Envoy-VC/awesome-badges)
 
-### `npm run build` fails to minify
+</br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Authors
+
+- Vinicius Pacheco is a student at Driven Education and is putting effort into it to switch careers. Nowadays he works with Engineering,
+  looking forward to become a Dev.
+  <br/>
+
+#
