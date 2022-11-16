@@ -1,6 +1,6 @@
 # projeto21-sing me a song
 
-In this project I was given the task of doing the unit tests, integration and e2e
+A tarefa desse projeto foi implementar os testes unitários, integração e ponta a ponta (e2e)
 
 <p align="center">
   <img  src="https://cdn-icons-png.flaticon.com/512/3208/3208679.png">
@@ -26,7 +26,7 @@ In this project I was given the task of doing the unit tests, integration and e2
 
 # Description
 
-Sing me a song is an application for anonymous song recommendation. The more people like a recommendation, the more likely it is to be recommended to others.
+Sing me a song é um aplicativo para recomendação anônima de músicas. Quanto mais pessoas gostarem de uma recomendação, maior a probabilidade de ela ser recomendada a outras pessoas.
 
 </br>
 
@@ -36,8 +36,8 @@ Sing me a song is an application for anonymous song recommendation. The more peo
 
 ## Testes
 
-- unitary [(backEnd)](https://github.com/ThVinicius/sing_me_a_song_backEnd)
-- integration [(backEnd)](https://github.com/ThVinicius/sing_me_a_song_backEnd)
+- unitários [(backEnd)](https://github.com/ThVinicius/sing_me_a_song_backEnd)
+- integração [(backEnd)](https://github.com/ThVinicius/sing_me_a_song_backEnd)
 - e2e [(frontEnd)](https://github.com/ThVinicius/sing_me_a_song_frontEnd)
 
 </br>
